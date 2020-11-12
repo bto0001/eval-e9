@@ -19,9 +19,6 @@ public class ItemPriorityService {
             return new ArrayList<>();
         }
 
-        // I tried to get the below code to work without using an extra set but no can do
-        // return new TreeSet<>(allItems);
-
         Set<Item> itemSet = new HashSet<>();
         Collection<Item> sortedItems = new TreeSet<>();
 
@@ -33,7 +30,5 @@ public class ItemPriorityService {
         }
 
         return sortedItems;
-
-
     }
 }
